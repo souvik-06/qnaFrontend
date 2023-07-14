@@ -1,0 +1,22 @@
+.pagination__div ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style-type: none;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pagination__div button {
+  font-size: small;
+  border: 1px solid gray;
+  border-radius: 25px;
+  background-color: rgb(200, 200, 200);
+}
+.pagination__div button:hover {
+  background-color: gray;
+}
+.pagination__div span {
+  padding-left: 5px;
+  padding-right: 5px;
+}

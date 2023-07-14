@@ -1,0 +1,59 @@
+.add__image {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  background-color: rgb(255, 225, 168);
+  cursor: pointer;
+}
+.add__image input {
+  display: none;
+  margin: auto;
+}
+.add__image span {
+  color: gray;
+  font-size: small;
+  margin: auto;
+}
+.add__image svg {
+  height: 2rem;
+  width: 2rem;
+  margin: auto;
+}
+
+.image__div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.image__div img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.single__image {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: "bottom";
+  margin: "10px";
+}
+
+.image__delete {
+  margin-top: 5px;
+  border: none;
+  height: 2rem;
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 79, 79);
+  font-size: small;
+}
+.image__delete svg {
+  height: 1rem;
+  width: 1rem;
+  margin: auto;
+}

@@ -1,0 +1,19 @@
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.home__header span {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(38, 65, 146);
+  color: white;
+}
+.sorting__div {
+  background-color: rgb(38, 65, 146);
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
