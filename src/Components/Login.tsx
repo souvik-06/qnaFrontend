@@ -32,7 +32,6 @@ const Login = () => {
           JSON.stringify({ token: localStorage.getItem("token") }),
           {
             headers: { "Content-Type": "application/json" },
-            withCredentials: true,
           }
         );
 
@@ -91,7 +90,7 @@ const Login = () => {
         JSON.stringify({ id: email, password: pwd }),
         {
           headers: { "Content-Type": "application/json" },
-          withCredentials: true,
+      
         }
       );
 

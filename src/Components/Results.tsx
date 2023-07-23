@@ -67,7 +67,7 @@ const Results = ({ searchTerm }: any) => {
                 //   </div>
                 // </div>
 
-                <div className="col" key={val.questionId.S}>
+                <div className="col" key={val.questionId}>
                   <div
                     className="card p-0"
                     style={{
@@ -76,7 +76,7 @@ const Results = ({ searchTerm }: any) => {
                     }}
                   >
                     <div className="card-header text-secondary">
-                      {val.createdBy.S}
+                      {val.createdBy}
                     </div>
                     {/* <img src={imgUrl} className="card-img-top" alt="..." /> */}
                     <div className="card-body">
@@ -88,19 +88,19 @@ const Results = ({ searchTerm }: any) => {
                           textOverflow: "ellipsis",
                         }}
                       >
-                        {val.question.S.substring(0, 20)}...
+                        {val.question.substring(0, 20)}...
                       </h5>
                       {/* <p className="card-text">{desc.substring(0, 20)}...</p> */}
                       <Link
                         style={{ textDecoration: "none" }}
-                        to={`/Details/${val.questionId.S}`}
+                        to={`/Details/${val.questionId}`}
                       >
                         Read More
                       </Link>
                     </div>
                     <div className="card-footer">
                       <small className="text-body-secondary text-secondary">
-                        {val.dateLog.S.split(",")[0]}
+                        {val.dateLog.split(",")[0]}
                       </small>
                     </div>
                   </div>

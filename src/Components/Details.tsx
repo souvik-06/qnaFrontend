@@ -44,7 +44,8 @@ export const Details = () => {
       if (!response) {
         console.log("error");
       }
-      const data = await response.json();
+      const dataAll = await response.json();
+      const data = dataAll.question;
       setDetails(data);
 
       const responseRole = await fetch(
@@ -76,10 +77,11 @@ export const Details = () => {
         if (!response) {
           console.log("error");
         }
-        const data = await response.json();
+        const dataAll = await response.json();
+        const data = dataAll.question;
         setDetails(data);
 
-        console.log(data);
+        console.log(data.Item);
 
         const responseRole = await fetch(
           `${API_URL}userinfo/${data.Item.createdBy}`

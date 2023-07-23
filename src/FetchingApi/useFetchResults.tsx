@@ -12,7 +12,8 @@ export const useFetchResults = () => {
       if (!response) {
         console.log("error");
       }
-      const data = await response.json();
+      const dataAll = await response.json();
+      const data = dataAll.question;
 
       setResults(data.Items);
     } catch (err) {

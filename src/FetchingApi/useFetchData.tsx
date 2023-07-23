@@ -13,14 +13,16 @@ export const useFetchData = () => {
       if (!response) {
         console.log("error");
       }
-      const data = await response.json();
+
+      const dataAll = await response.json();
+      const data = dataAll.questions;
 
       setTransformedData(
         data.Items.sort((a: any, b: any) => {
           let aDateArray = a.dateLog.split(",");
-        let aDate=Date.parse(aDateArray[aDateArray.length-1]);
-        let bDateArray = b.dateLog.split(",");
-        let bDate=Date.parse(bDateArray[bDateArray.length-1]);
+          let aDate = Date.parse(aDateArray[aDateArray.length - 1]);
+          let bDateArray = b.dateLog.split(",");
+          let bDate = Date.parse(bDateArray[bDateArray.length - 1]);
           return aDate > bDate ? -1 : 1;
         })
       );

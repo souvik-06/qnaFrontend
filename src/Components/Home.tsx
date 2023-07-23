@@ -45,10 +45,10 @@ export const Home = ({ transformedData, kFetch }: any) => {
   const currentPost =
     transformedData && transformedData.slice(firstIndex, lastIndex);
 
-  const handleSortChange = async (event: any) => {
+  const handleSortChange = (event: any) => {
     setSortOrder(event.target.value);
     //console.log("sortingOrder", event.target.value);
-    await sortData();
+    sortData();
   };
 
   return (
